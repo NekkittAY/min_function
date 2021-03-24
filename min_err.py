@@ -14,7 +14,7 @@ def calc(func):
             res=eval(mass)
             result.append(res)
         except:
-            res=1000000
+            res=0
             result.append(res)
     return result
 
