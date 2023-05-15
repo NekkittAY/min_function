@@ -27,7 +27,7 @@ def MSE(y,a_pred,x):
     res = 0
     for i in range(len(y)):
         res+=(y[i]-y_pred(a_pred,x[i]))**2
-    res**0.5
+    res = res/len(y)
     return res
 
 x = list(map(float, input().split()))
